@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tour of Heroes';
+  @HostListener('window:message', ['$event']) onPostMessage(event: any) {
+    console.log("Evento")
+    console.log(event)
+    if (event.data.data) {
+      alert("Vamos")
+      alert(JSON.stringify(event.data.data))
+    } else {
+      alert("No vamos")
+    }
+  }
 }

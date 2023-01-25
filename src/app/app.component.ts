@@ -13,7 +13,13 @@ export class AppComponent {
   constructor(private heroService: HeroService) { }
 
   @HostListener('window:message', ['$event']) onPostMessage(event: any) {
-    this.heroService.log(JSON.stringify(event))
+    console.log(event)
+    this.heroService.log("message - " + JSON.stringify(event, null, 4))
+  }
+
+  @HostListener('window:onmessage', ['$event']) onPostMessage1(event: any) {
+    console.log(event)
+    this.heroService.log("onMessage - " + JSON.stringify(event, null, 4))
   }
 
   

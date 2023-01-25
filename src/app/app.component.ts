@@ -16,9 +16,9 @@ export class AppComponent {
     this.heroService.log("window:message - " + JSON.stringify(event, null, 4))
     this.heroService.log("data - " + JSON.stringify(event.data, null, 4))
 
-    event.origin.postMessage("hi there yourself!  the secret response " +
+    event.source.postMessage("hi there yourself!  the secret response " +
                            "is: rheeeeet!",
-                           event.source);
+                           event.origin);
   }
   
 }

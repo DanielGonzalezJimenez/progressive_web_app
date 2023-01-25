@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1674672887380,
+  "timestamp": 1674673256903,
   "index": "https://danielgonzalezjimenez.github.io/progressive_web_app/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://danielgonzalezjimenez.github.io/progressive_web_app/favicon.ico",
         "https://danielgonzalezjimenez.github.io/progressive_web_app/index.html",
-        "https://danielgonzalezjimenez.github.io/progressive_web_app/main.034bc31715776814.js",
+        "https://danielgonzalezjimenez.github.io/progressive_web_app/main.f31284e6d58fd7d7.js",
         "https://danielgonzalezjimenez.github.io/progressive_web_app/manifest.webmanifest",
         "https://danielgonzalezjimenez.github.io/progressive_web_app/polyfills.072a159de548ac67.js",
         "https://danielgonzalezjimenez.github.io/progressive_web_app/runtime.6e50dac17b84e715.js",
@@ -52,8 +52,8 @@
     "https://danielgonzalezjimenez.github.io/progressive_web_app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://danielgonzalezjimenez.github.io/progressive_web_app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://danielgonzalezjimenez.github.io/progressive_web_app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://danielgonzalezjimenez.github.io/progressive_web_app/index.html": "8534231ed9c397b5d03d9392f669e67d017c2985",
-    "https://danielgonzalezjimenez.github.io/progressive_web_app/main.034bc31715776814.js": "419e8f12ad9d80a58d9126b7f0511502e234ab56",
+    "https://danielgonzalezjimenez.github.io/progressive_web_app/index.html": "708aa76d3f6b54d15ccca72fdef3f1068dfb961b",
+    "https://danielgonzalezjimenez.github.io/progressive_web_app/main.f31284e6d58fd7d7.js": "ca84fe4c5f58aeab1c6d7b67a6e5ba71b2502937",
     "https://danielgonzalezjimenez.github.io/progressive_web_app/manifest.webmanifest": "2d309fbf233c54da58ae8b281f79d3543c6f74db",
     "https://danielgonzalezjimenez.github.io/progressive_web_app/polyfills.072a159de548ac67.js": "5a383b50fca4ad71578f27edb947c10e8adbf6e6",
     "https://danielgonzalezjimenez.github.io/progressive_web_app/runtime.6e50dac17b84e715.js": "b06bd254bf39cd3d927bdbe45eba69faf79086e8",

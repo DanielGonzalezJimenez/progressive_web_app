@@ -24,5 +24,11 @@ export class AppComponent {
     this.heroService.log("onMessage - " + JSON.stringify(event, null, 4))
   }
 
+  @HostListener('window:successCapture', ['$event']) successCapture(event: any) {
+    console.log("successCapture")
+    console.log(event)
+    this.heroService.log("onMessage - " + JSON.stringify(event, null, 4))
+  }
+
   
 }

@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HeroService } from './hero.service';
 
@@ -12,23 +12,13 @@ export class AppComponent {
 
   constructor(private heroService: HeroService) { }
 
-  @HostListener('window:message', ['$event']) onPostMessage(event: any) {
-    console.log("message")
-    console.log(event)
-    this.heroService.log("message - " + JSON.stringify(event, null, 4))
-  }
+  @HostListener('window:message', ['$event']) windowMessage(event: any) {
+    this.heroService.log("window:message - " + JSON.stringify(event, null, 4))
+    this.heroService.log("data - " + JSON.stringify(event.data, null, 4))
 
-  @HostListener('window:onmessage', ['$event']) onPostMessage1(event: any) {
-    console.log("onMessage")
-    console.log(event)
-    this.heroService.log("onMessage - " + JSON.stringify(event, null, 4))
+    event.origin.postMessage("hi there yourself!  the secret response " +
+                           "is: rheeeeet!",
+                           event.source);
   }
-
-  @HostListener('window:successCapture', ['$event']) successCapture(event: any) {
-    console.log("successCapture")
-    console.log(event)
-    this.heroService.log("onMessage - " + JSON.stringify(event, null, 4))
-  }
-
   
 }
